@@ -41,7 +41,7 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: wGQ52UQfzLUp2NmD
       MONGO_INITDB_DATABASE: dev_ichgram_db
     volumes:
-        - C:/Program Files/MongoDB/Server/8.0/data:/app/data/db
+        - ~/mongo_data:/app/data/db:rw
     networks:
         - ichgram_network
 
