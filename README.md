@@ -5,6 +5,17 @@ This project is a simplified copy of the popular social network **Instagram**, c
 
 ---
 
+
+
+#Добавлено 03,02,2025:
+# Dockerfile
+# .dockerignore
+# файл requirements
+
+#Запустилось на МАК и по ссылке http://127.0.0.1:8888/tree проект запускается
+
+
+
 ## Tech Stack
 
 ### **Frontend**:
