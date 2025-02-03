@@ -1,8 +1,21 @@
-FROM node:22-alpine
+# Используем официальный образ Node.js (замени версию, если нужно)
+FROM node:18
+
+# Устанавливаем рабочую директорию в контейнере
 WORKDIR /app
+
+# Копируем файлы package.json и package-lock.json (если есть) в контейнер
 COPY package*.json ./
-RUN npm install && npm install -g nodemon
-#     && npm install -g typescript && npm install bcrypt
+
+# Устанавливаем зависимости
+RUN npm install
+
+# Копируем все файлы проекта в контейнер
 COPY . .
+
+# Открываем порт (замени, если у тебя другой)
 EXPOSE 3400
-CMD ["npm", "run", "dev"]
+
+# Команда запуска сервера
+CMD ["node", "server.js"]
+
