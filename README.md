@@ -1,3 +1,10 @@
+
+#Запуск проекта на МАК:
+#docker build -t finalcourseproject .
+#docker run -p 8888:8888 finalcourseproject
+ 
+
+
 # ICHGram (Instagram Clone)
 
 **Project description**:  
